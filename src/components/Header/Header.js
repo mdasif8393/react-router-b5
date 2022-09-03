@@ -29,6 +29,14 @@ const Header = () => {
             Friends
           </NavLink>
             <NavLink
+            to="/posts"
+            style={({ isActive }) =>
+              isActive ? activeStyle : undefined
+            }
+          >
+            Posts
+          </NavLink>
+            <NavLink
             to="/about"
             style={({ isActive }) =>
               isActive ? activeStyle : undefined
